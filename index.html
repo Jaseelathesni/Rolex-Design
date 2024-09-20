@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROLEX</title>
+    <style>
+html body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    /* border: 2px solid; */
+    padding: 20px;
+    background-color: #105033;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#header{
+    /* display: flex; */
+    display: inline-flex;
+    float: right; 
+ 
+ }
+ 
+ #header li{
+     /* align-items: last baseline; */
+     list-style: none;
+     padding-right: 25px;
+     /* float: right; */
+     /* align-items: flex-end; */
+ }
+
+/* header{
+    background-color:#105033;
+    height: 160px;
+    width: 100%;
+    display: flex;
+}
+.head1{
+    list-style: none;
+    display: inline-flex;
+    
+}
+#logo{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0;
+}
+#menu{
+    margin: 2%;
+    margin-left: 10%;
+}
+.search{
+    margin-left: 56%;
+}
+.location{
+    margin-left: 7%;
+}
+.heart{
+    margin-left: 7%; */
+
+.video{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 400%;
+}
+.overlaytext1 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 35px; /* Adjust font size as needed */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional: Adds a shadow to the text */
+    text-align: center;
+    animation: fadeIn 1s ease-in-out infinite alternate;
+}
+@keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translate(-50%, -60%);
+            }
+            100% {
+                opacity: 1;
+                transform: translate(-50%, -50%);
+            }
+        }
+.main{
+    font-size: 80px;
+}
+.new{
+    text-decoration: none;
+    color: white;
+    font-size: small;
+}
+.new:hover{
+    color: darkgreen;
+}
+.left{
+    background-color: white;
+    width: 40%;
+    float: left;
+    padding-left: 10%;
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+.right{
+    background-color: white;
+    width: 50%;
+    float: left;
+    padding-top: 4%;
+    padding-bottom: 1%;
+}
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.find{
+    text-decoration: none; 
+    cursor: pointer;
+    color: darkgreen;
+    font-size: small;
+}
+.find:hover{
+    color: black;
+}
+.explore{
+    color: darkgreen;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.type ul {
+    text-align: center;
+    display: grid;
+    grid-auto-flow: column;
+    list-style-type:none;
+}
+.type li:hover{
+    color: darkgreen;
+}
+.type{
+    padding-left: 10%;
+    padding-bottom: 1%;
+    padding-top: 4%;
+    background-color: white;
+    float: left;
+    width: 90%;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    /* width: 100%; */
+    z-index: 1000; 
+}
+.type .navbar {
+    background-color: white;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    /* width: 100%; */
+    z-index: 1000; /*Ensures the navbar stays on top*/
+}
+
+.navbar ul {
+    list-style-type: none;
+    /* margin: 0; */
+    /* padding: 0; */
+    display: flex;
+    justify-content: space-around;
+    /* justify-content: center; */
+}
+
+.navbar li {
+    display: inline;
+}
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+/* .navbar a:hover {
+    background-color: black;
+    color: black;
+} */ 
+.configure{
+    background-color: rgb(8, 73, 8);
+    color: white;
+    border: none;
+    border-radius: 25px;
+}
+.configure:hover{
+    background-color: rgb(5, 52, 5);
+}
+.conf{
+    padding-bottom: 2.4%;
+    padding-top: 5%;
+    padding-left: 5%;
+    float: left;
+    width: 10%;
+    background-color: white;
+}
+img{
+    width: 100%;
+}
+.image{
+    position: relative;
+    transition-property: width;
+    transition-property: height;
+    transition-duration: 10s;
+}     
+.image :hover{
+    width: 110%;
+    height: 110%;
+}
+.overlay-text-image{
+    position: absolute;
+    top: 50%; /* Position text at the vertical center */
+    left: 20%; /* Position text at the horizontal center */
+    transform: translate(-50%, -50%); /* Center the text */
+    color: white; /* Text color */
+    font-size: 20px; /* Text size */
+    font-weight: bold; /* Text weight */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional shadow for better readability */
+    text-align: center;
+    animation: fadeIn 1s ease-in-out infinite alternate;
+}
+@keyframes slideIn {
+            0% {
+                transform: translate(-50%, -100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translate(-50%, 0);
+                opacity: 1;
+            }
+        }
+.link{
+    text-decoration: none;
+    color: white;
+    font-size: small;
+}
+.link:hover{
+    color: darkgreen;
+}
+h6{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.home{
+    padding-top: 2%;
+    padding-left: 8%;
+    font-size: x-small;
+    color: darkgreen;
+}
+.homelink{
+    text-decoration: none;
+    color: black;
+}
+.homelink:hover{
+    color: darkgreen;
+}
+.share{
+    padding-left: 8%;
+    padding-top: 2%;
+    color: darkgreen;
+}
+.col1{
+    float: left;
+    width: 20%;
+    background-color: white;
+    padding-left: 5%;
+    color: darkgreen;
+    font-size: large;
+    height: 521px;
+}
+.col2{
+    float: left;
+    width: 20%;
+    background-color:  white;
+    padding-left: 5%;
+    height: 521px;    
+}
+.col3{
+    float: left;
+    width: 20%;
+    background-color: white;
+    padding-left: 5%;
+    height: 521px;
+}
+.col4{
+    float: left;
+    width: 20%;
+    background-color: white;
+    padding-left: 5%;
+    height: 521px;
+}
+#rolex{
+    width: 70px;
+    height: 50px;
+    margin: 20%;
+}
+.c2{
+    font-size: small;
+}
+.b2{
+    font-size: medium;
+}
+.language{
+    float: left;
+    width: 40%;
+    background-color: white;
+    padding-left: 10%;
+}
+.check{
+    float: left;
+    width: 30%;
+    background-color: white;
+    padding-left: 20%;
+    padding-top: 2%;
+    padding-bottom: 1.35%;
+}
+.footer{
+    text-align: center;
+    padding-top: 10%;
+    background-image: url(mountain1.avif);
+    width: 100%;
+    height: 200px;
+}
+.ftrlink{
+    text-decoration: none;
+    color: black;
+}
+.ftrlink:hover{
+    color: darkgreen;
+}
+.signoutbutton{
+    width: 150px;       /* Set the width of the button */
+    height: 50px;       /* Set the height of the button */
+    padding: 10px 20px; /* Add padding inside the button */
+    font-size: 18px;    /* Increase the font size */
+    color: white;       /* Text color */
+    border: none;       /* Remove the border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    background-color: red;
+}
+.signoutbutton:hover{
+    background-color: rgb(199, 87, 87);
+}
+
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <!-- <ul class="head1">
+            <li><i class='bx bx-menu'>Menu</i></li>
+        </ul>
+        <center>
+            <a href="login.html"><img id="logo" src="rolex1.jpg"></a>
+        </center>
+        <ul class="head1" style="float: right;">
+            <li><i class='bx bx-search' >Search</i></li>
+            <li><i class='bx bx-location-plus' >Store locator</i></li>
+            <li><i class='bx bx-heart' >favourites</i></li>
+        </ul> -->
+        <ul id="header">
+            <!-- <li id="menn"><a href="login.html" style="color: white;">Login</a></li> -->
+            <li id="menn"><a href="menu.html"><span class="material-symbols-outlined" style="color: white;">
+            menu
+        </a><p style="color: white;">Menu</p></span></li>
+        </ul>
+            <a href="//www.rolex.com/en-us"><center><img src="rolex1.jpg" alt="" width="40" height="40" class="logo" id="rol"></center></a>
+            <ul id="header">
+                <li id="search"><a href="#"><span class="material-symbols-outlined" style="color: white;">
+                    search
+                </a><p style="color: white;">Search</p></span></li>
+                <li id="loc"><a href="login.html" style="text-decoration: none; color: white;"><i class='bx bx-log-in' style="font-size: 20px;"><p style="font-size: 15px; margin-top: 25px;">Login</p></i></a></li>
+                <li id="fav"><a href="signout.html" style="text-decoration: none; color: white;"><i class='bx bx-log-out' style="font-size: 20px;"><p style="font-size: 15px; margin-top: 25px;">Logout</p></i></a></li>
+                <!-- <li id="loc"><a href="#"><span class="material-symbols-outlined" style="color: white;">
+                    location_on
+                </a><p style="color: white;">Store locator</p></span></li> -->
+                <!-- <li id="fav"><a href="#"><span class="material-symbols-outlined" style="color: white;">
+                    favorite
+                </a><p style="color: white;">Favourites</p></span></li> -->
+        </ul>
+    </header> 
+
+
+
+    <div class="vedio">
+        <video muted autoplay loop width="100%" height="100%">
+            <source src="rolexvedio.mp4"></video>
+            <div class="overlaytext1">
+                <h6 class="sub">THE COLLECTION</h6>
+                <h1 class="main">Rolex Watches</h1>
+                
+                <a href="#" class="new"><b>New Watches 2024 ></b></a>
+            </div>
+        </div>
+
+
+
+<div class="left">
+    <h1 class="explore">Explore the Rolex </h1>
+        <h1 class="explore">Collection</h1>
+</div>
+<div class="right">
+    <p>The Rolex collection offers a wide range of prestigious,<br>
+        high-precision timepieces, from Professional to Classic <br>
+        models to suit any wrist.</p><br><br>
+    <a href="" class="find">Find Your Rolex ></b></a>
+</div>
+<div class="type">
+    <b>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">All</a></li>
+            <li><a href="#">Classic</a></li>
+            <li><a href="#">Professional</a></li>
+            <li><a href="#">Watches by theme</a></li>
+            <li> <button class="class configure">configure</button></li>
+        </ul>
+    </nav></b>
+</div>
+
+
+<div class="images">
+    <div class="image">
+    <img src="rolex1.avif" class="img2">
+        <div class="overlay-text-image">
+            <h1>Datejust</h1>
+            <h6>A watch for the dates to remember</h6>
+            <a href="#" class="link">Discover more ></a>
+        </div>
+    </div>
+
+    <div class="image">
+        <img src="rolex2.avif" class="img2">
+        <div class="overlay-text-image">
+            <h1>Submariner</h1>
+            <h6>The supreme diver's watch</h6>
+            <a href="#" class="link">Discover more ></a>
+        </div>
+    </div>
+    
+    <div class="image">
+        <img src="rolex3.avif" class="img3">
+        <div class="overlay-text-image">
+            <h1>GMT-Master II</h1>
+            <h6>Two time-zones,two-colours,uniquely iconic</h6>
+            <a href="#" class="link">Discover more ></a>
+        </div>
+    </div>
+
+    <div class="image">
+        <img src="rolex4.avif" class="img4">
+        <div class="overlay-text-image">
+            <h1>Day-Date</h1>
+            <h6>A witness to some of History's most pivotal moments</h6>
+            <a href="#" class="link">Discover more ></a>
+        </div>
+    </div>
+
+    <div class="image">
+        <img src="rolex5.avif" class="img5">
+        <div class="overlay-text-image">
+            <h1>Cosmograph Daytona</h1>
+            <h6>The chronograph that made a watch an icon</h6>
+            <a href="#" class="link">Discover more ></a>
+        </div>
+    </div>
+
+    <div class="image">
+        <img src="rolex6.avif" class="img6">
+        <div class="overlay-text-image">
+            <h1>Oyster Perpetual</h1>
+            <h6>Quintessentially Rolex</h6>
+            <a href="#" class="link">Discover more ></a>
+        </div>
+    </div>
+
+    <div class="image">
+        <img src="rolex7.avif" class="img7">
+        <div class="overlay-text-image">
+            <h1>Yacht-Master</h1>
+            <h6>To keep your heading, no matter the circumstances</h6>
+            <a href="#" class="link">Discover more ></a>
+        </div>
+    </div>
+
+    <div class="image">
+        <img src="rolex8.avif" class="img8">
+        <div class="overlay-text-image">
+            <h1>Sea-Dweller</h1>
+            <h6>Citizen of the deep</h6>
+            <a href="#" class="link">Discover more ></a>
+        </div>
+    </div>
+
+    <div class="image">
+        <img src="rolex9.avif" class="img9">
+        <div class="overlay-text-image">
+            <h1>Deepsea</h1>
+            <h6>Extreme divers' watches</h6>
+            <a href="#" class="link">Discover more ></a>
+        </div>
+    </div>
+
+    <div class="image">
+        <img src="rolex10.avif" class="img10">
+        <div class="overlay-text-image">
+            <h1>Air-King</h1>
+            <h6>An ever-improved homage to the pioneers of the skies</h6>
+            <a href="#" class="link">Discover more ></a>
+        </div>
+    </div>
+
+    <div class="image"> 
+        <img src="rolex11.avif" class="img11">
+        <div class="overlay-text-image">
+            <h1>Explorer</h1>
+            <h6>Unrelenting ally to face it all</h6>
+            <a href="#" class="link">Discover more ></a>
+        </div>
+    </div>
+
+    <div class="image">
+        <img src="rolex12.avif" class="img12">
+        <div class="overlay-text-image">
+            <h1>Lady-Datejust</h1>
+            <h6>Confidence carried with grace</h6>
+            <a href="#" class="link">Discover more ></a>
+        </div>
+    </div>
+
+    <div class="image">
+        <img src="rolex13.avif" class="img13">
+        <div class="overlay-text-image">
+            <h1>Sky-Dweller</h1>
+            <h6>With the world as its time-zone</h6>
+            <a class="link" href="#">Discover more ></a>
+        </div>
+    </div>
+</div>
+
+
+<div>
+    <p class="home"><a href="#" class="homelink">Home</a>/The Rolex Collection</p>
+</div>
+<div >
+    <h2 class="share"><b>share</b>
+    <box-icon type='logo' name='facebook' class="iconlast"></box-icon>
+    <box-icon name='envelope' class="iconlast"></box-icon>
+    <box-icon name='whatsapp' type='logo' class="iconlast"></box-icon>
+    <box-icon type='logo' name='linkedin' class="iconlast"></box-icon>
+    <box-icon name='pinterest-alt' type='logo' class="iconlast"></box-icon>
+    <box-icon name='instagram' type='logo' class="iconlast"></box-icon>
+    <box-icon name='youtube' type='logo' class="iconlast"></box-icon></h2>
+</div>
+
+        
+<div class="col1">
+    <img src="rolexlogo.jpg" id="rolex">
+</div>
+<div class="col2">
+    <p class="c2"><b class="b2">Rolex watches</b><br>
+    New watches 2024<br>
+    Find your Rolex<br>
+    Configure your Rolex<br>
+    Men's watches<br>
+    Women's watches<br>
+    Gold watches<br></p>
+    <p class="c2"><b class="b2">The collection</b><br>
+    Air-King<br>
+    Cosmograph Daytona<br>
+    Datejust<br>
+    Lady-Datejust<br>
+    Day-Date<br>
+    Explorer<br>
+    GMT-Master II<br>
+    Oyster Perpetual<br>
+    Sea-Dweller<br>
+    Deepsea<br>
+    Sky-Dweller<br>
+    Submariner<br>
+    Yacht-Master<br>
+    1908<br></p>
+    <p class="c2"><b class="b2">Watchmaking</b><br>
+    At the core of excellence<br>
+    Behind the seal<br>
+    Rolex anatomy</p>
+</div>
+<div class="col3">
+    <p class="c2"><b class="b2">Rolex and sports</b><br>
+    Tennis<br>
+    Golf<br>
+    Yachting<br>
+    Motor sport<br>
+    Equestrianism</p>
+    <p class="c2"><b class="b2">Perpetual Initiatives</b><br>
+    Perpetual Planet Initiative<br>
+    Perpetual Arts Initiative</p>
+    <p class="c2"><b class="b2">About Rolex</b><br>
+    Sustainable development<br>
+    Behind the crown<br>
+    History</p>
+    <p  class="c2"><b class="b2">Buying a Rolex</b><br>
+    Store locator<br>
+    Buying a Rolex<br>
+    Rolex Certified Pre-Owned</p>
+    <p class="c2"><b class="b2">Care and servicing</b><br>
+    Service Centre locator<br>
+    Watch care and service</p><br>
+</div>
+<div class="col4">
+    <p class="c2"><b class="b2">Services</b><br>
+    Frequently asked questions<br>
+    Your favourites<br>
+    File a report<br>
+    Newsroom</p>
+    <p class="c2"><b>Legal notice</b><br>
+    Terms of use<br>
+    Privacy notice<br>
+    Cookies</p>
+    <p class="c2"><b>Accessibility</b><br>
+    Read our statement</p>
+    <p class="c2"><b>Media</b><br>
+    Wallpapers<br>
+    Brochures<br>
+    User guides</p>
+    <p class="c2">
+        <b>Official channels</b><br>
+        <box-icon type='logo' name='facebook'></box-icon>Facebook<br>
+        <box-icon name='instagram' type='logo' ></box-icon>Instagram<br>
+        <box-icon name='youtube' type='logo' ></box-icon>YouTube<br>
+        <box-icon name='pinterest-alt' type='logo' ></box-icon>Pinterest<br>
+        <box-icon name='linkedin' type='logo' ></box-icon>LinkedIn<br>
+        <box-icon name='whatsapp' type='logo' ></box-icon>Whatsapp<br>
+    </p>
+</div>
+<hr>
+ 
+
+<div class="language">
+    <p class="lang"><box-icon name='world'></box-icon>Languages</p>
+</div>
+<div class="check">
+    <input type="checkbox" ><label>Reduce motion</label>
+    <input type="checkbox" ><label>Contrast active</label>
+</div>
+
+
+<div class="footer">
+    <h1>Discover our Perpetual Initiatives</h1>
+    <a href="#" class="ftrlink">Visit Rolex.org</a>
+</div>
+<br>
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>

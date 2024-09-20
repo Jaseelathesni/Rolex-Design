@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           a{
+    color: red;
+    text-decoration: none;
+}
+h1{
+    color: darkgreen;
+}
+body{
+    background-image: url(login2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-position: center;
+}
+button {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(7, 76, 38);
+    background-color: rgb(253, 255, 254); /* Button color */
+}
+button:hover{
+    background-color: rgb(198, 232, 195);
+}
+  
+    </style>
+</head>
+<body>
+    <center>
+        <h1>SIGNUP</h1>
+        <h5>Already have an account?<a href="login.html">Login</a></h5>
+        <form action="login.html">
+            <label>Username:</label><br>
+            <input type="text"  required placeholder="enter your username"><br><br>
+            <label>Password:</label><br>
+            <input type="password" placeholder="enter your password"><br><br>
+            <label>Confirm Password:</label><br>
+            <input type="password"placeholder="Confirm your password"><br><br>
+            <label>Email:</label><br>
+            <input type="email"  required placeholder="enter your email"><br><br>
+            <label>Phone No:</label><br>
+            <input type="number" value="number" required placeholder="enter your Phone No."><br><br>
+            <button value="login">SUBMIT</button>
+        </form>
+    </center>
+</body>
+</html>
